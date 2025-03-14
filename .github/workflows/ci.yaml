@@ -19,4 +19,5 @@ jobs:
           pip install -r requirements.txt
       - name: Tests execution
         run: |
-          python -m coverage run -m unittest tests/test_calculator.py et coverage report -m
+          python -m coverage run -m unittest tests/test_calculator.py
+          coverage report -m
